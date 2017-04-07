@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		   #div1{
+		      width: 504px;
+		      height: 62px;
+		      border-top:1px solid black;		   
+		   }
+		   dt{
+		      color: red;
+		      font-size: 10px;
+		      font-weight: bolder;
+		      position:absolute;
+		   }
+		   #dd1{
+		      color: #000000;
+		      font-size: 18px;
+		      font-weight: bolder;
+		      margin:0 0 0 10px;		      
+		      position:absolute;
+		   }
+		   /*#dd1:hover{
+		   background-color: red;*/
+/*		   }*/
+		   #dd2,#dd3,#dd4{
+		      font-size: 16px;
+		      font-weight: bolder;
+		      color: orange;
+		      position:absolute;
+		      left:195px;
+		      /*display: none;*/
+
+		   }
+		   #img1,#img2,#img3,#img4,#img5{
+		      background-image: url(星星1.png);
+		      width: 20px;
+		      height: 23px;
+		      float: left;
+		      margin: 0 0 0 5px;
+		   }
+		   #img1{
+		   margin: 0 0 0 100px;
+		   }
+		   #img1:hover,#img2:hover,#img3:hover,#img4:hover,#img5:hover{
+		     background-image: url(星星2.png);	
+		     	      
+		   }
+		   img{
+		     position: absolute;
+		     top: 15px;
+		     left:272px;
+		   }
+		</style>
+	</head>
+	<body>
+	    <div id="div1">
+	       <dl>
+	       	<dt>＊</dt>
+	       	<dd id="dd1">总体评价:</dd>
+	       	<div id="div2">
+	       	     <dd id="img1"/></dd>
+	       	     <dd id="img2"/></dd>
+	       	     <dd id="img3"/></dd>
+	       	     <dd id="img4"/></dd>
+	       	     <dd id="img5"/></dd>
+	       	     <img src="提示.png" alt="" />
+	       	   
+	       	</div>
+	       	<dd id="dd2">较差</dd>
+	       	<dd id="dd3">推荐</dd>
+	       	<dd id="dd4">力推</dd>
+	       </dl>  
+	    </div>
+	
+	<script>
+	    var oImg=document.getElementsByTagName('dd');
+	    var oImg1=document.getElementsByTagName('img');
+	    
+	    
+	    oImg.onmouseover=function(){
+	      oImg.style.display='none'
+	      oImg1.style.display='none'
+	    }
+	</script>
+	
+	</body>
+</html>
